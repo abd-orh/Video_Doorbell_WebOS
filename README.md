@@ -1,4 +1,4 @@
-# Video_Doorbel_WebOS
+# Video_Doorbell_WebOS
 
 Display Reolink Video Doorbell snapshots as an overlay on an LG webOS TV.
 
