@@ -4,6 +4,21 @@ Display Reolink Video Doorbell snapshots as an overlay on an LG webOS TV.
 
 This project uses sequential JPEG files because older webOS browsers may not reliably display MJPEG, FLV, or repeatedly overwritten JPEG snapshots.
 
+## 🤖 AI-assisted Development
+
+This project was designed, developed, tested, and documented with the assistance of OpenAI ChatGPT.
+
+ChatGPT was used to help with:
+
+- webOS application development
+- Home Assistant automation
+- JavaScript implementation
+- Shell scripting
+- Documentation and README writing
+- Project structure and GitHub publishing
+
+The project idea, requirements, testing, and validation were performed on real hardware by the project author.
+
 ## Tested setup
 
 - LG OLED55B8SLC
@@ -64,3 +79,4 @@ Never publish real IP addresses, passwords, device IDs or entity IDs.
 ## License
 
 MIT
+
