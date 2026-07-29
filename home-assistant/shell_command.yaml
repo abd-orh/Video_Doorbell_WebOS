@@ -1,0 +1,3 @@
+shell_command:
+  # Run in the background so Home Assistant can open the TV app immediately.
+  doorbell_snapshot: "bash /config/scripts/doorbell_snapshot.sh >/dev/null 2>&1 &"

@@ -1,0 +1,13 @@
+{
+  "id": "ro.video.doorbell",
+  "version": "1.0.1",
+  "vendor": "Video_Doorbell_WebOS",
+  "type": "web",
+  "title": "Video Doorbell",
+  "main": "index.html",
+  "icon": "icon.png",
+  "requiredPermissions": [],
+  "transparent": true,
+  "defaultWindowType": "overlay",
+  "disableBackHistoryAPI": true
+}

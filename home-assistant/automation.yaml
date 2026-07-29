@@ -1,0 +1,34 @@
+alias: Doorbell LG
+description: Display Reolink doorbell snapshots on an LG webOS television
+triggers:
+  - trigger: device
+    type: turned_on
+    device_id: YOUR_DEVICE_ID
+    entity_id: YOUR_ENTITY_ID
+    domain: binary_sensor
+conditions:
+  - condition: state
+    entity_id: media_player.YOUR_LG_TV
+    state: "on"
+actions:
+  - action: shell_command.doorbell_snapshot
+  - parallel:
+      - sequence:
+          - action: media_player.play_media
+            target:
+              entity_id: media_player.YOUR_SPEAKER
+            data:
+              media:
+                media_content_id: media-source://media_source/local/ringbell.mp3
+                media_content_type: audio/mpeg
+                metadata: {}
+      - sequence:
+          # Give the script time to generate the first frames.
+          - delay:
+              milliseconds: 700
+          - action: media_player.select_source
+            target:
+              entity_id: media_player.YOUR_LG_TV
+            data:
+              source: Video Doorbell
+mode: restart
